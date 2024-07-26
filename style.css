@@ -1,0 +1,41 @@
+h1 {
+  color: black;
+  font-size: 48px;
+}
+
+h2 {
+  color: black;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  height: 72px;
+  font-size: 36px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  height: 40px;
+  font-size: 24px;
+}
+
+.evenNumber {
+  background-color: #f2f2f2;
+  border: 2px solid red;
+}
+
+.HKD {
+  background-color: #f2f2f2;
+  border: 2px solid red;
+}
