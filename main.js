@@ -1,6 +1,6 @@
 import { fetchData } from './modules/fetchData.js';
 import { incrementObjectValues } from './modules/utils.js';
-import { createForexPageHeading, createForexTableBody } from './modules/createTable.js';
+import { createForexPageHeading, createForexTableBody, createErrorFooter } from './modules/createTable.js';
 
 fetchData()
   .then(({base, date, rates}) => {
@@ -16,5 +16,6 @@ fetchData()
     }
   }).catch((error) => {
     console.error(error);
+    createErrorFooter(error);
   }
 );

@@ -52,4 +52,17 @@ function createForexTableBody(rates, newRates) {
     tbody.appendChild(tr);
   });
 }
-export { createForexPageHeading, createForexTableBody };
+
+// this function create a footer for the page if fetching is failed
+function createErrorFooter(err) {
+  const footer = document.querySelector("#footer");
+  // remove the laoding text
+  while (footer.firstChild) {
+		footer.removeChild(footer.firstChild);
+	}
+  // display error message
+  const error = document.createElement("h2");
+  error.textContent = `Failed to fetch data from API: ${err}`;
+  footer.appendChild(error);
+}
+export { createForexPageHeading, createForexTableBody, createErrorFooter};

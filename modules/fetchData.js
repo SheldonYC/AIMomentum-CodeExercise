@@ -1,6 +1,6 @@
 // a good practice is to read the apikey from a .env file
 // but for this project it is hardcoded for simplicity
-const apiKey = "9sOx2d1gWYZrKY0uD4hCbOMIQzLcL4KQ";
+const apiKey = "mgVI8aoBK3H40SA0OeLEmpNNbpfnqOtX";
 const apiUrl = "https://api.apilayer.com/fixer/latest";
 
 const requestOptions = {
